@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>AngularJS: Infinite Scrolling - jsFiddle demo</title>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="item.css" />
+
+</head>
+
+<body ng-app="scroll" ng-controller="Main" class="ng-scope">
+    <div id="fixed" when-scrolled="loadMore()">
+        <ul>
+            <li ng-repeat="i in items">{{i.id}}</li>
+        </ul>
+    </div>
+
+
+
+    <script src="./scrollup.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>
